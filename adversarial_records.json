@@ -1,0 +1,74 @@
+[
+  {
+    "record_source": "CRM_A",
+    "customer_id": " C-100 ",
+    "order_id": "O-900",
+    "first_name": "Ada",
+    "last_name": "Lovelace",
+    "email": "ada.crm@example.test",
+    "order_status": "PAID",
+    "order_total": "125.50",
+    "source_updated_at": "2026-01-01T10:00:00+00:00",
+    "payload": {"case": "normal"}
+  },
+  {
+    "record_source": "CRM_A",
+    "customer_id": "C-100",
+    "order_id": "O-900",
+    "first_name": "Ada",
+    "last_name": "Lovelace",
+    "email": "ada.crm@example.test",
+    "order_status": "PAID",
+    "order_total": "125.50",
+    "source_updated_at": "2026-01-01T10:00:00+00:00",
+    "payload": {"case": "replay"}
+  },
+  {
+    "record_source": "CRM_A",
+    "customer_id": "C-100",
+    "order_id": "O-900",
+    "first_name": "Augusta",
+    "last_name": "Lovelace",
+    "email": "ada.crm@example.test",
+    "order_status": "PAID",
+    "order_total": "125.50",
+    "source_updated_at": "2026-01-03T10:00:00+00:00",
+    "payload": {"case": "correction"}
+  },
+  {
+    "record_source": "ERP_B",
+    "customer_id": "C-100",
+    "order_id": "O-900",
+    "first_name": "Ada",
+    "last_name": "Lovelace",
+    "email": "ada.erp@example.test",
+    "order_status": "SHIPPED",
+    "order_total": "125.50",
+    "source_updated_at": "2026-01-02T08:00:00+00:00",
+    "payload": {"case": "same_business_key_different_source"}
+  },
+  {
+    "record_source": "ERP_B",
+    "customer_id": "C-101",
+    "order_id": "O-901",
+    "first_name": null,
+    "last_name": "  O'Connor  ",
+    "email": null,
+    "order_status": "CANCELLED",
+    "order_total": "0.00",
+    "source_updated_at": "2026-01-04T12:00:00+00:00",
+    "payload": {"case": "null_and_whitespace"}
+  },
+  {
+    "record_source": "CRM_A",
+    "customer_id": "C-102",
+    "order_id": "O-902",
+    "first_name": "Zoë",
+    "last_name": "Façade",
+    "email": "zoe@example.test",
+    "order_status": "PENDING",
+    "order_total": "17.25",
+    "source_updated_at": "2025-12-31T23:59:59+00:00",
+    "payload": {"case": "late_arriving_unicode"}
+  }
+]
